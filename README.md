@@ -20,7 +20,7 @@ C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/t
 ## Usage
 1. Open Android Studio and create a new android project.
 2. After adding your project information and the targeted android devices you will see the options to add an activity on the next screen.
-3. Choose the Option "Kupferwerk Base App Template". ![Choose Options](https://raw.githubusercontent.com/kupferwerk/AndroidStudio-Base-Template/master/doc/choose_base_app.png)
+3. Choose the Option "Kupferwerk Base App Template". ![Choose Options](https://github.com/kupferwerk/AndroidStudio-Base-Template/blob/master/doc/choose_base_app.png)
 4. In the next screen you could modify the template. The template generates one activity with the entered parameters. Additionally the following feature could be added:
   - Square Dagger for dependency injection
   - Square Picasso for imageloading
