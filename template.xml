@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<template
+    format="3"
+    revision="4"
+    name="Kupferwerk Base App Template"
+    minApi="15"
+    minBuildApi="15"
+    description="Creates the Kupferwerk Base Application">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="activityClass"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${layoutToActivity(layoutName)}"
+        default="MainActivity"
+        help="The name of the activity class to create" />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(activityClass)}"
+        default="activity_main"
+        help="The name of the layout to create for the activity" />
+
+    <parameter
+        id="activityTitle"
+        name="Title"
+        type="string"
+        constraints="nonempty"
+        default="MainActivity"
+        suggest="${activityClass}"
+        help="The name of the activity. For launcher activities, the application title." />
+
+    <parameter
+        id="menuName"
+        name="Menu Resource Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="menu_${classToResource(activityClass)}"
+        default="menu_main"
+        help="The name of the resource file to create for the menu items" />
+
+    <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
+
+    <parameter
+        id="parentActivityClass"
+        name="Hierarchical Parent"
+        type="string"
+        constraints="activity|exists|empty"
+        default=""
+        help="The hierarchical parent activity, used to provide a default implementation for the 'Up' button" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <parameter
+        id="includeDagger"
+        name="Include Dagger"
+        type="boolean"
+        default="true"
+        help="Implements all references for using dagger dependency injection. Provides also a sample module declaration." />
+
+    <parameter
+        id="includeRetrofit"
+        name="Include Retrofit"
+        type="boolean"
+        default="true"
+        help="Implements all references for using Retrofit." />
+
+    <parameter
+        id="includePicasso"
+        name="Include Picasso"
+        type="boolean"
+        default="true"
+        help="Implements all references for using Picasso." />
+
+    <parameter
+        id="includeRxJava"
+        name="Include RxJava"
+        type="boolean"
+        default="true"
+        help="Implements all references for using RxJava." />
+
+    <parameter
+        id="includeEventbus"
+        name="Include Greenrobot Eventbus"
+        type="boolean"
+        default="true"
+        help="Implements all references for using Greenrobot Eventbus." />
+
+    <parameter
+        id="includeMockito"
+        name="Include Mockito for Testing"
+        type="boolean"
+        default="true"
+        help="Implements all references for using Mockito in your unit tests." />
+
+    <parameter
+        id="includeHockeyApp"
+        name="Include HockeyApp"
+        type="boolean"
+        default="true"
+        help="Implements all references for using HockeyApp." />
+
+    <parameter
+        id="hockeyAppId"
+        name="HockeyApp Id"
+        type="string"
+        constraint="string"
+        default="1234567890abcdef1234567890abcdef"
+        help="The HockeyApp Id. This parameter will only be used if include HockeyApp is checked." />
+
+    <parameter
+        id="includeKWUtils"
+        name="Include Kupferwerk Utils (Debugging and Tools)."
+        type="boolean"
+        default="true"
+        help="Implements all references for using Kupferwerk Utils." />
+
+    <parameter
+        id="kwMavenUser"
+        name="User for Kupferwerk Repo (needed for Utils)"
+        type="string"
+        constraint="string"
+        help="The username to access protected Kupferwerk Maven Repository." />
+
+    <parameter
+        id="kwMavenPassword"
+        name="Password for Kupferwerk Repo (needed for Utils)"
+        type="string"
+        constraint="string"
+        help="The password to access protected Kupferwerk Maven Repository." />
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_kupferwerk_baseapp.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
