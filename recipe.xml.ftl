@@ -7,7 +7,6 @@
     <instantiate from="build.gradle.ftl" to="${escapeXmlAttribute(projectOut)}/build.gradle" />
     <instantiate from="AndroidManifest.xml.ftl" to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
     <merge from="res/values/strings.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/strings.xml" />
-    <instantiate from="res/menu/main.xml.ftl" to="${escapeXmlAttribute(resOut)}/menu/${menuName}.xml" />
     <instantiate from="res/values/colors.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/colors.xml" />
     <instantiate from="res/values/config.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/config.xml" />
     <instantiate from="res/values/styles.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/styles.xml" />
