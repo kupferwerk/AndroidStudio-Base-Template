@@ -3,16 +3,19 @@
 This project contains a Android Studio template to create a basic Kupferwerk Android app.
 
 ##Installation
-1. Clone this repository to the following directory depending on your machine:
+- Clone this repository to the following directory depending on your machine:
+
 *MacOS*
 ```
 /Applications/Android Studio.app/Contents/plugins/android/lib/templates/activities/
 ```
+
 *Windows*
 ```
 C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/templates/activities/
 ```
-2. Restart Android Studio
+
+- Restart Android Studio
 
 ## Usage
 1. Open Android Studio and create a new android project.
