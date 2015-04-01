@@ -4,17 +4,14 @@ This project contains a Android Studio template to create a basic Kupferwerk And
 
 ##Installation
 1. Clone this repository to the following directory depending on your machine:
-
 *MacOS*
 ```
 /Applications/Android Studio.app/Contents/plugins/android/lib/templates/activities/
 ```
-
 *Windows*
 ```
 C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/templates/activities/
 ```
-
 2. Restart Android Studio
 
 ## Usage
@@ -35,4 +32,4 @@ C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/t
 ![Choose Features](https://raw.githubusercontent.com/kupferwerk/AndroidStudio-Base-Template/master/doc/choose_options.png)
 
 ## Important Notes!
-This template is added as an Activity-template for Android Studio. This means that it is also possible integrate this template from New -> Activity menu. *This is not recommended since this template will explicitly override some files (e.g. build.gradle, AndroidManifest.xml) without confirmation.*
+This template is added as an Activity-template for Android Studio. This means that it is also possible integrate this template from New -> Activity menu again. **This is not recommended since this template will explicitly override some files (e.g. build.gradle, AndroidManifest.xml) without confirmation.**
