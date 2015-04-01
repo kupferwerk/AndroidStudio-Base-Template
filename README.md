@@ -35,4 +35,4 @@ C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/t
 ![Choose Features](https://github.com/kupferwerk/AndroidStudio-Base-Template/blob/master/doc/choose_options.png)
 
 ## Important Notes!
-This template is added as an Activity-template for Android Studio. This means that it is also possible integrate this template from New -> Activity menu again. **Do not execute this template more than once on one project. Since this template will explicitly override some files (e.g. build.gradle, AndroidManifest.xml) without confirmation.**
+This template is added as an Activity-template for Android Studio. This means that it is also possible integrating this template from New -> Activity menu again. **Do not execute this template more than once on one project. Since this template will explicitly override some files (e.g. build.gradle, AndroidManifest.xml) without confirmation.**
