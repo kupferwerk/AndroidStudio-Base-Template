@@ -32,7 +32,7 @@ C:/Users/<<username>>/AppData/Local/Android/android-studio/plugins/android/lib/t
   - Integration of some Kupferwerk internal libraries. These libraries are hosted in the private Kupferwerk maven repository. You should provide some credentials in this case.
 5. Start the generation.
 
-![Choose Features](https://raw.githubusercontent.com/kupferwerk/AndroidStudio-Base-Template/master/doc/choose_options.png)
+![Choose Features](https://github.com/kupferwerk/AndroidStudio-Base-Template/blob/master/doc/choose_options.png)
 
 ## Important Notes!
 This template is added as an Activity-template for Android Studio. This means that it is also possible integrate this template from New -> Activity menu again. **This is not recommended since this template will explicitly override some files (e.g. build.gradle, AndroidManifest.xml) without confirmation.**
