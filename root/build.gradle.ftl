@@ -89,7 +89,7 @@ dependencies {
    compile 'com.squareup.picasso:picasso:2.5.2'
 </#if>
 <#if includeRxJava>
-   compile 'com.netflix.rxjava:rxjava-android:0.19.0'
+   compile 'io.reactivex:rxandroid:0.24.0'
 </#if>
 <#if includeKWUtils>
    compile 'net.kupferwerk:debugging:1.0.1'
