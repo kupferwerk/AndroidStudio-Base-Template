@@ -73,7 +73,10 @@ dependencies {
    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
    compile 'com.squareup.dagger:dagger:1.2.2'
 </#if>
-   compile 'com.android.support:appcompat-v7:22.0.0'
+   compile 'com.android.support:support-v4:22.1.1'
+   compile 'com.android.support:appcompat-v7:22.1.1'
+   compile 'com.android.support:recyclerview-v7:21.0.3'
+   compile 'com.android.support:cardview-v7:21.0.3'
 <#if includeHockeyApp>
    compile 'net.hockeyapp.android:HockeySDK:3.5.0'
 </#if>
@@ -89,7 +92,7 @@ dependencies {
    compile 'com.squareup.picasso:picasso:2.5.2'
 </#if>
 <#if includeRxJava>
-   compile 'com.netflix.rxjava:rxjava-android:0.19.0'
+   compile 'io.reactivex:rxandroid:0.24.0'
 </#if>
 <#if includeKWUtils>
    compile 'net.kupferwerk:debugging:1.0.1'
