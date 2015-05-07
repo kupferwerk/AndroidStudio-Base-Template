@@ -1,8 +1,6 @@
 package ${packageName};
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 <#if includePicasso>
 import com.squareup.picasso.Picasso;
