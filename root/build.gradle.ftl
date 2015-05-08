@@ -54,7 +54,7 @@ task checkstyle(type: Checkstyle) {
 }
 
 project.gradle.taskGraph.whenReady {
-   connectedAndroidTest {
+   connectedAndroidTestDebug {
       ignoreFailures = true
    }
 }
