@@ -14,6 +14,7 @@
     <instantiate from="res/values-w820dp/dimens.xml" to="${escapeXmlAttribute(resOut)}/values-w820dp/dimens.xml" />
 
     <instantiate from="res/layout/toolbar.xml.ftl" to="${escapeXmlAttribute(resOut)}/layout/toolbar.xml" />
+    <instantiate from="res/layout/activity_base.xml.ftl" to="${escapeXmlAttribute(resOut)}/layout/activity_base.xml" />
     <instantiate from="res/layout/activity_container.xml.ftl" to="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 
     <instantiate from="src/app_package/core/BaseApplication.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/BaseApplication.java"/>

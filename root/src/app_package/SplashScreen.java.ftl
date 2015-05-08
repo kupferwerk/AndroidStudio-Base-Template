@@ -40,8 +40,12 @@ public class ${activityClass} extends BaseActivity {
 </#if>
 
    @Override
+   protected int getLayoutResourceId() {
+      return R.layout.${layoutName};
+   }
+
+   @Override
    protected void onCreate(Bundle savedInstanceState) {
-      setContentView(R.layout.${layoutName});
       super.onCreate(savedInstanceState);
       <#if includeDagger>
       Injector.inject(this);
