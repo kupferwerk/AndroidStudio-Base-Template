@@ -6,5 +6,6 @@
     <global id="Support" value="${(hasDependency('com.android.support:appcompat-v7'))?string('Support','')}" />
     <global id="srcOut" value="${srcDir}/${slashedPackageName(packageName)}" />
     <global id="resOut" value="${resDir}" />
+    <global id="debugResOut" value="./app/src/debug/res" />
     <global id="relativePackage" value="<#if relativePackage?has_content>${relativePackage}<#else>${packageName}</#if>" />
 </globals>

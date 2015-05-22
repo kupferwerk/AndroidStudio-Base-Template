@@ -28,6 +28,9 @@
         <instantiate from="src/app_package/core/module/ApplicationModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/ApplicationModule.java"/>
         <instantiate from="src/app_package/core/module/WebserviceModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/WebserviceModule.java"/>
     </#if>
+    <#if includeRetrofit>#
+        <instantiate from="res_debug/values/config_debug.xml.ftl" to="${escapeXmlAttribute(debugResOut)}/values/config_debug.xml" />
+    </#if>
     <instantiate from="src/app_package/SplashScreen.java.ftl" to="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
     <#if includeMockito>
     <instantiate from="src/test_package/MockitoTestCase.java.ftl" to="${testOut}/MockitoTestCase.java" />

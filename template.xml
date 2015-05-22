@@ -117,6 +117,20 @@
         help="The HockeyApp Id. This parameter will only be used if include HockeyApp is checked." />
 
     <parameter
+        id="stagingBaseUrl"
+        name="Staging Base URL"
+        type="string"
+        constraint="string"
+        default="http://staging.baseurl.example.com"
+        help="The base URL of your staging server. This will be used for debug builds" />
+    <parameter
+        id="releaseBaseUrl"
+        name="Base URL"
+        type="string"
+        constraint="string"
+        default="http://release.baseurl.example.com"
+        help="The base URL of your server. This will be used for release builds" />
+    <parameter
         id="includeKWUtils"
         name="Include Kupferwerk Utils (Debugging and Tools)."
         type="boolean"
