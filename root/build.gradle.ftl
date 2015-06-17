@@ -73,10 +73,10 @@ dependencies {
    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
    compile 'com.squareup.dagger:dagger:1.2.2'
 </#if>
-   compile 'com.android.support:support-v4:22.1.1'
-   compile 'com.android.support:appcompat-v7:22.1.1'
-   compile 'com.android.support:recyclerview-v7:21.0.3'
-   compile 'com.android.support:cardview-v7:21.0.3'
+   compile 'com.android.support:support-v4:22.2.0'
+   compile 'com.android.support:appcompat-v7:22.2.0'
+   compile 'com.android.support:recyclerview-v7:22.2.0'
+   compile 'com.android.support:cardview-v7:22.2.0'
 <#if includeHockeyApp>
    compile 'net.hockeyapp.android:HockeySDK:3.5.0'
 </#if>
