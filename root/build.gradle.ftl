@@ -81,8 +81,8 @@ dependencies {
    compile 'net.hockeyapp.android:HockeySDK:3.5.0'
 </#if>
 <#if includeRetrofit>
-   compile 'com.squareup.okhttp:okhttp:2.3.0'
-   compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
+   compile 'com.squareup.okhttp:okhttp:2.4.0'
+   compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'
    compile 'com.squareup.retrofit:retrofit:1.9.0'
 </#if>
 <#if includeEventbus>
