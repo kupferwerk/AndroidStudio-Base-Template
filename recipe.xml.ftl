@@ -26,7 +26,9 @@
         <instantiate from="src/app_package/core/Injector.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/Injector.java"/>
         <instantiate from="src/app_package/core/module/RootModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/RootModule.java"/>
         <instantiate from="src/app_package/core/module/ApplicationModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/ApplicationModule.java"/>
-        <instantiate from="src/app_package/core/module/WebserviceModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/WebserviceModule.java"/>
+        <#if includeWebserviceModule>
+            <instantiate from="src/app_package/core/module/WebserviceModule.java.ftl" to="${escapeXmlAttribute(srcOut)}/core/module/WebserviceModule.java"/>
+        </#if>
     </#if>
     <#if includeRetrofit>#
         <instantiate from="res_debug/values/config_debug.xml.ftl" to="${escapeXmlAttribute(debugResOut)}/values/config_debug.xml" />

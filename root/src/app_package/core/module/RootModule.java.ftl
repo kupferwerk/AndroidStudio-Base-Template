@@ -9,8 +9,9 @@ import dagger.Provides;
 import ${packageName}.${activityClass};
 import ${packageName}.core.BaseApplication;
 
-@Module (includes = {WebserviceModule.class, ApplicationModule.class},
-      injects = {BaseApplication.class, ${activityClass}.class})
+@Module (includes = {<#if includeWebserviceModule>WebserviceModule.class, </#if>ApplicationModule.class},
+      injects = {BaseApplication.class, ${activityClass}.class}
+      <#if !includeWebserviceModule>, library = true</#if>)
 public class RootModule {
 
    private Context context;

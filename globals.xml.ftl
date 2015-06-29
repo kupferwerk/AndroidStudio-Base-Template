@@ -8,4 +8,5 @@
     <global id="resOut" value="${resDir}" />
     <global id="debugResOut" value="./app/src/debug/res" />
     <global id="relativePackage" value="<#if relativePackage?has_content>${relativePackage}<#else>${packageName}</#if>" />
+    <global id="includeWebserviceModule" type="boolean" value="${(includeRetrofit || includePicasso)?string}" />
 </globals>
