@@ -7,13 +7,13 @@ android {
       exclude 'LICENSE.txt'
    }
 
-   compileSdkVersion 22
+   compileSdkVersion 23
    buildToolsVersion "22.0.1"
 
    defaultConfig {
       applicationId "${packageName}"
-      minSdkVersion 15
-      targetSdkVersion 22
+      minSdkVersion 16
+      targetSdkVersion 23
       versionCode System.getenv("BUILD_NUMBER") as Integer ?: 0
       String versionNameString = System.getenv("BUILD_NUMBER") ?: "IDE"
       versionName versionNameString
@@ -53,12 +53,6 @@ task checkstyle(type: Checkstyle) {
    }
 }
 
-project.gradle.taskGraph.whenReady {
-   connectedAndroidTestDebug {
-      ignoreFailures = true
-   }
-}
-
 task checkstyleReport(dependsOn: 'checkstyle') << {
    if (file("build/outputs/reports/checkstyle-results.xml").exists()) {
       ant.xslt(in: "build/outputs/reports/checkstyle-results.xml",
@@ -73,16 +67,15 @@ dependencies {
    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
    compile 'com.squareup.dagger:dagger:1.2.2'
 </#if>
-   compile 'com.android.support:support-v4:22.2.0'
-   compile 'com.android.support:appcompat-v7:22.2.0'
-   compile 'com.android.support:recyclerview-v7:22.2.0'
-   compile 'com.android.support:cardview-v7:22.2.0'
+   compile 'com.android.support:appcompat-v7:23.0.1'
+   compile 'com.android.support:recyclerview-v7:23.0.1'
+   compile 'com.android.support:cardview-v7:23.0.1'
 <#if includeHockeyApp>
-   compile 'net.hockeyapp.android:HockeySDK:3.5.0'
+   compile 'net.hockeyapp.android:HockeySDK:3.6.0-b.1'
 </#if>
 <#if includeRetrofit>
-   compile 'com.squareup.okhttp:okhttp:2.4.0'
-   compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'
+   compile 'com.squareup.okhttp:okhttp:2.5.0'
+   compile 'com.squareup.okhttp:okhttp-urlconnection:2.5.0'
    compile 'com.squareup.retrofit:retrofit:1.9.0'
 </#if>
 <#if includeEventbus>
@@ -92,13 +85,13 @@ dependencies {
    compile 'com.squareup.picasso:picasso:2.5.2'
 </#if>
 <#if includeRxJava>
-   compile 'io.reactivex:rxandroid:0.24.0'
+   compile 'io.reactivex:rxandroid:1.0.1'
 </#if>
 <#if includeKWUtils>
    compile 'net.kupferwerk:debugging:1.0.1'
-   compile 'net.kupferwerk:tools:1.0.1'
+   compile 'net.kupferwerk:tools:1.0.2'
 </#if>
-   compile 'com.jakewharton:butterknife:6.1.0'
+   compile 'com.jakewharton:butterknife:7.0.1'
 <#if includeMockito>
    androidTestCompile 'org.mockito:mockito-core:1.10.19'
    androidTestCompile 'com.google.dexmaker:dexmaker:1.2'

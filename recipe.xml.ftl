@@ -11,7 +11,11 @@
     <instantiate from="res/values/config.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/config.xml" />
     <instantiate from="res/values/styles.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/styles.xml" />
     <instantiate from="res/values/dimens.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/dimens.xml" />
-    <instantiate from="res/values-w820dp/dimens.xml" to="${escapeXmlAttribute(resOut)}/values-w820dp/dimens.xml" />
+    
+    <instantiate from="res/values-w820dp/dimens.xml.ftl" to="${escapeXmlAttribute(resOut)}/values-w820dp/dimens.xml" />
+    <instantiate from="res/values-v21/version_configs.xml.ftl" to="${escapeXmlAttribute(resOut)}/values-v21/version_configs.xml" />
+    <instantiate from="res/values-v19/version_configs.xml.ftl" to="${escapeXmlAttribute(resOut)}/values-v19/version_configs.xml" />
+    <instantiate from="res/values/version_configs.xml.ftl" to="${escapeXmlAttribute(resOut)}/values/version_configs.xml" />
 
     <instantiate from="res/layout/toolbar.xml.ftl" to="${escapeXmlAttribute(resOut)}/layout/toolbar.xml" />
     <instantiate from="res/layout/activity_base.xml.ftl" to="${escapeXmlAttribute(resOut)}/layout/activity_base.xml" />
