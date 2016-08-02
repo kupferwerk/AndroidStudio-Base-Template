@@ -1,14 +1,16 @@
 
 # Since updating this template has proven impractical this repository will not be maintained anymore.
-  
-  
-  
-  
+
+
+
+
+
+
 ---
-  
-  
-  
-  
+
+
+
+
 
 ## AndroidStudio-Base-Template
 
