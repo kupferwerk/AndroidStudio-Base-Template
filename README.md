@@ -3,8 +3,14 @@
   
   
   
+  
+---
+  
+  
+  
+  
 
-# AndroidStudio-Base-Template
+## AndroidStudio-Base-Template
 
 This project contains a Android Studio template to create a basic Kupferwerk Android app.
 
